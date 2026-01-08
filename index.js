@@ -6,16 +6,24 @@ function reverseString(text) {
   }
 }
 // reverseString("hello")
-/---------------------------------------------------/
+/---------------------------------------------------/;
 // Problem 2: Count Vowels in a String
-const countVowels = (text){
-    let count =0;
-    let vowels = "aeiouAEIOU";
-    for (let i = 0; i<text.length; i++){
-        if(vowels.includes(text[i]))
-        count++;
-    }
-    return count;
+function countVowels(text) {
+  let count = 0;
+  let vowels = "aeiouAEIOU";
+  for (let i = 0; i < text.length; i++) {
+    if (vowels.includes(text[i])) count++;
+  }
+  return count;
 }
 // countVowels("programming")
-/---------------------------------------------------/
+/---------------------------------------------------/;
+// Problem 3: Check for Palindrome
+function isPalindrome(str) {
+  let reversed = str.split("").reverse().join("");
+  return str === reversed;
+}
+
+// isPalindrome("madam");
+// isPalindrome("hello");
+/---------------------------------------------------/;
