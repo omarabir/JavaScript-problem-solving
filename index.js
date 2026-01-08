@@ -96,7 +96,6 @@ function findEvenNumbers(arr) {
 
 // /---------------------------------------------------/;
 
-
 // Problem 8: Capitalize First Letter of Each Word
 function capitalizeWords(text) {
   let words = text.split(" ");
@@ -110,3 +109,19 @@ function capitalizeWords(text) {
 }
 
 // capitalizeWords("hello world");
+
+// /---------------------------------------------------/;
+
+// Problem 9: Find the Factorial of a Number
+function factorial(num) {
+  let result = 1;
+
+  for (let i = 1; i <= num; i++) {
+    result *= i;
+  }
+  return result;
+}
+
+// factorial(5);
+
+// /---------------------------------------------------/;
