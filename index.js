@@ -45,7 +45,7 @@ function findMax(arr) {
   return max;
 }
 
-// findMax([5, 1, 9, 3]); 
+// findMax([5, 1, 9, 3]);
 
 // /---------------------------------------------------/;
 
@@ -65,7 +65,6 @@ function removeDuplicates(arr) {
 
 // /---------------------------------------------------/;
 
-
 // Problem 6: Sum of All Numbers in an Array
 
 function sumArray(arr) {
@@ -77,7 +76,20 @@ function sumArray(arr) {
   return sum;
 }
 
-
 // sumArray([1, 2, 3, 4])
 
 // /---------------------------------------------------/;
+// Problem 7: Find Even Numbers in an Array
+function findEvenNumbers(arr) {
+  let evens = [];
+
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] % 2 === 0) {
+      evens.push(arr[i]);
+    }
+  }
+  return evens;
+}
+
+// findEvenNumbers([1, 2, 3, 4, 5, 6]);
+
